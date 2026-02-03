@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enquire | Homelink</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Homelink</div>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="how-it-works.html">How It Works</a>
+          <a href="services.html">Services</a>
+          <a href="enquire.html">Enquire</a>
+        </div>
+        <a class="button" href="enquire.html">Start enquiry</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section">
+        <h1>Enquire</h1>
+        <p>
+          Provide your details and we will send the onboarding pack, a sample
+          report, and the hero film.
+        </p>
+      </section>
+
+      <section class="section">
+        <form id="enquiry-form">
+          <label>
+            Full name
+            <input type="text" name="fullName" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            WhatsApp number
+            <input type="tel" name="whatsapp" required />
+          </label>
+          <label>
+            Country of residence
+            <input type="text" name="country" required />
+          </label>
+          <label>
+            Property location (city or area)
+            <input type="text" name="location" required />
+          </label>
+          <label>
+            Property type
+            <select name="propertyType" required>
+              <option value="">Select</option>
+              <option value="house">House</option>
+              <option value="apartment">Apartment</option>
+              <option value="commercial">Commercial</option>
+            </select>
+          </label>
+          <label>
+            Number of units
+            <input type="number" name="units" min="1" required />
+          </label>
+          <label>
+            Biggest concern
+            <select name="concern" required>
+              <option value="">Select</option>
+              <option value="reporting">Lack of reliable reporting</option>
+              <option value="maintenance">Maintenance oversight</option>
+              <option value="rent">Rent tracking and collection</option>
+              <option value="tenants">Tenant management</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+          <label>
+            Are you ready to start in 30 days?
+            <select name="ready" required>
+              <option value="">Select</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </label>
+          <label>
+            Notes
+            <textarea name="notes" placeholder="Optional"></textarea>
+          </label>
+          <button class="button" type="submit">Submit enquiry</button>
+          <p class="notice" id="form-status" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-grid">
+        <div>
+          <div>Homelink</div>
+          <div>Premium property management for diaspora owners.</div>
+        </div>
+        <div>
+          <div>Contact</div>
+          <div>hello@homelink.example</div>
+        </div>
+        <div>
+          <div>Legal</div>
+          <div>Privacy policy · Terms of service</div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
